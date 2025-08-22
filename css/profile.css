@@ -1,0 +1,177 @@
+/* HOME PAGE */
+
+/* sets default font, background color, and text color */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* styles the top bar with a fark background and white text */
+  header  {
+    background-color: #1e3d59;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Remove bullet points and spaces, aligns nav items horizontal */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Styles the nav links white, bold, no underline */
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Adds a background image, padding, and centers text in the hero section. */
+  .hero {
+    background-size: cover;
+    min-height: 400px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Styles the bio section with padding white background, and rounded corners */
+  .bio {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  /* STYLE SHEET ABOUT IMAGE BACKGROUND */
+  image-grid {
+    display: flex; /* turns the container into a flexbox allowing images to align horizontaly*/
+    gap: 20px; /* Adds space between each image*/
+    flex-wrap: wrap;/* allow image to wrap to the next line if the screen is too narrow*/
+    justify-content: center; /* Centers the images horizontally in the container*/
+  }
+  
+  image-grid img {
+    width: 300px; /* sets a fixed wigth for each image*/
+    height: auto; /* keeps the image's aspect ratio intact*/
+    border-radius: 10px; /* rounds the corners for a smooth modern look*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);/* adds a soft shadow for depth - makes image pop*/
+    transition: transform 0.3s ease; /* prepares the image for smooth animation when hovered.*/
+  }
+  
+  image-grid img:hover{
+    transform: scale(1.05); /* slightly enlarges the image when hoved _ adds interactivity and flair*/
+  }
+  
+  
+   
+  
+
+
+
+/* ================================
+   Container: Overall Card Styling
+   ================================ */
+   .player-card {
+    background-color: #f0f0f0;         /* Light background for contrast */
+    border-radius: 12px;               /* Rounded corners for soft look */
+    padding: 1.5em;                    /* Inner spacing */
+    max-width: 400px;                 /* Limit width for readability */
+    margin: 2em auto;                 /* Center card with vertical spacing */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    text-align: center;               /* Center-align text and content */
+    font-family: 'Segoe UI', sans-serif; /* Clean, modern font */
+  }
+  
+  /* ================================
+     Header: Flags and Position Tags
+     ================================ */
+  .card-header {
+    display: flex;                    /* Horizontal layout */
+    justify-content: center;         /* Center items horizontally */
+    align-items: center;             /* Align vertically */
+    gap: 1em;                         /* Space between flags and positions */
+    margin-bottom: 1em;              /* Space below header */
+  }
+  
+  /* Flag Images */
+  .flag {
+    width: 40px;                      /* Standard flag size */
+    height: auto;
+    border-radius: 4px;              /* Slight rounding for polish */
+    box-shadow: 0 0 4px rgba(0,0,0,0.2); /* Soft glow */
+  }
+  
+  /* Position Labels */
+  .positions {
+    display: flex;                   /* Horizontal layout for positions */
+    gap: 0.5em;                      /* Space between each label */
+  }
+  
+  .pos {
+    background-color: #222;          /* Dark background */
+    color: #fff;                     /* White text */
+    padding: 0.3em 0.6em;            /* Inner spacing */
+    border-radius: 4px;              /* Rounded corners */
+    font-size: 0.9em;                /* Slightly smaller text */
+    font-weight: bold;
+  }
+  
+  /* ================================
+     Player Photo Styling
+     ================================ */
+  .photo-container {
+    margin-bottom: 1em;
+  }
+  
+  .player-photo {
+    width: 100%;                     /* Full width of container */
+    max-width: 180px;                /* Limit size */
+    border-radius: 50%;              /* Circular image */
+    object-fit: cover;               /* Crop image to fit container */
+    box-shadow: 0 0 8px rgba(0,0,0,0.2); /* Soft shadow */
+  }
+  
+  /* ================================
+     Player Name Styling
+     ================================ */
+  .player-name {
+    font-size: 1.4em;                /* Larger font for emphasis */
+    margin-bottom: 1em;
+    color: #333;                     /* Dark gray for readability */
+  }
+  
+  /* ================================
+     Stats Table Styling
+     ================================ */
+  .stats-table {
+    width: 100%;                     /* Full width of card */
+    border-collapse: collapse;       /* Remove gaps between cells */
+    margin-top: 1em;
+  }
+  
+  .stats-table th,
+  .stats-table td {
+    padding: 0.5em;                  /* Inner spacing */
+    border: 1px solid #ccc;          /* Light borders */
+    font-size: 0.95em;
+  }
+  
+  .stats-table th {
+    background-color: #ddd;          /* Light gray header */
+    font-weight: bold;
+  }
+  
+  .stats-table td {
+    background-color: #fff;          /* White background for values */
+  }
+  
