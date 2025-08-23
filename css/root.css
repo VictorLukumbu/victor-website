@@ -346,10 +346,12 @@ cursor: pointer;
 /* ============================
  Responsive Navigation
 ============================= */
+
+
 @media (max-width: 768px) {
 nav ul {
   flex-direction: column;
-  display: flex; /* don't hid on mobile */
+  display: none; /* Hidden by default on mobile */
   background-color: #1e3d59;
   padding: 10px;
   border-radius: 8px;
@@ -472,5 +474,4 @@ box-shadow: 0 0 6px rgba(0,0,0,0.2); /* Soft shadow around the image */
 font-size: 18px;              /* Medium font size for name */
 margin: 5px 0;                /* Small vertical spacing */
 color: #333;
-
 }

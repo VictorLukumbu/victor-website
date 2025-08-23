@@ -32,6 +32,8 @@
         
       </ul>
     </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
   </header>
   
   <!-- Background slider container -->
@@ -69,5 +71,12 @@
 
   <!-- loads my JavaScript file for interactivity -->
   <script src="js/script.js"></script>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav ul").classList.toggle("show");
+    }
+  </script>
+  
 </body>
 </html>
